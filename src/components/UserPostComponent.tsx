@@ -4,7 +4,7 @@ type IProps = {
     posts: IPost,
 }
 const UserPostComponent: FC<IProps> = ({posts}) => {
-    console.log(posts)
+
     return (
         <>
             <p><b>{posts.id}</b> - {posts.title}</p>
