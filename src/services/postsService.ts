@@ -6,6 +6,7 @@ import {IRes} from "../types/IRes";
 
 const postsService= {
     getPosts: (): IRes<IPost[]> => axiosService.get(urls.posts),
+    getPostsUser: (id: number):IRes<IPost[]> => axiosService.get(urls.byUserId + id)
 }
 
 export {

@@ -1,5 +1,7 @@
 import React, {FC} from 'react';
 import {IUser} from "../../types/IUser";
+// import styles from './UserComponent.module.css';
+import {Link} from "react-router-dom";
 
 type IProps = {
     user:IUser,
@@ -12,6 +14,10 @@ const UserComponent: FC<IProps> = ({user}) => {
                 <p><b>{user.id}</b> - {user.name}</p>
                 <p>E-mail: {user.email}</p>
                 <p>Website: {user.website}</p>
+
+                {/*<button className={styles.userButton}>posts</button>*/}
+
+                <Link to={user.id.toString()}>posts-link</Link>
                 <hr/>
             </div>
 
