@@ -15,8 +15,6 @@ const UserComponent: FC<IProps> = ({user}) => {
                 <p>E-mail: {user.email}</p>
                 <p>Website: {user.website}</p>
 
-                {/*<button className={styles.userButton}>posts</button>*/}
-
                 <Link to={user.id.toString()}>posts-link</Link>
                 <hr/>
             </div>

@@ -5,7 +5,7 @@ const urls = {
     users: '/users',
     posts: '/posts',
     comments: 'comments',
-    byUserId: 'posts?userId='
+    byUserId: 'posts?userId=',
 }
 
 export {

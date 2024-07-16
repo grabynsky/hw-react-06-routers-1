@@ -6,6 +6,7 @@ import {IComment} from "../types/IComment";
 
 const commentsService = {
     getComments: (): IRes<IComment[]> => axiosService.get(urls.comments),
+
 }
 
 export {

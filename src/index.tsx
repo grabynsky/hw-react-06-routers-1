@@ -8,6 +8,7 @@ import PostsPage from "./pages/PostsPage";
 import CommentsPage from "./pages/CommentsPage";
 import ErrorPage from "./layout/errors/ErrorPage";
 import UserPostsPage from "./pages/UserPostsPage";
+import PostCommentsPage from "./pages/PostCommentsPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -36,9 +37,13 @@ const router = createBrowserRouter([
                 element: <PostsPage/>
             },
             {
+                path:'posts/:id',
+                element:<PostCommentsPage/>
+            },
+            {
                 path: 'comments',
                 element: <CommentsPage/>
-            }
+            },
         ]
     }
 ])
